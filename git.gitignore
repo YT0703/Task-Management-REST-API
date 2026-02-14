@@ -1,0 +1,41 @@
+    # Virtual environment
+    venv/
+    .venv/
+
+    # Byte-code files
+    *.pyc
+    __pycache__/
+
+    # Database
+    *.db
+    *.sqlite
+    *.sqlite3
+
+    # Environment variables
+    .env
+
+    # Docker
+    .dockerignore
+
+    # IDE files
+    .vscode/
+    .idea/
+    .cursor/
+
+    # pytest cache
+    .pytest_cache/
+    __pycache__/
+    *.pyc
+
+
+    # Python
+    __pycache__/
+    *.pyc
+
+    # venv
+    venv/
+    .venv/
+    .env
+
+    # OS
+    .DS_Store

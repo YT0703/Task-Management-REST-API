@@ -1,0 +1,23 @@
+# docker-compose.yml
+
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app  # ホストの現在のディレクトリをコンテナの /app にマウント
+    environment:
+      # 環境変数を.envファイルから読み込む
+      # .envファイルが存在しない場合はデフォルト値が使用される
+      - DATABASE_URL=sqlite:///./sql_app.db
+      - SECRET_KEY=super-secret-key
+    # Alembicの実行のために、commandsの前に必要なファイルがあることを確認する
+    # depends_on:
+    #   - db # 必要に応じてデータベースサービスを追加
+    
+
+
+
